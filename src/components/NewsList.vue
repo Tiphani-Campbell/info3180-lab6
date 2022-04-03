@@ -24,7 +24,7 @@ export default{
         searchNews(){
             let self =this;
 
-            fetch('https://newsapi.org/v2/everything?q='+self.searchTerm + 'language=en', {
+            fetch('https://newsapi.org/v2/everything?q='+ self.searchTerm + 'language=en', {
                 headers: {
                     'Authorization': `Bearer ${import.meta.env.VITE_NEWSAPI_TOKEN}`,
                 }
